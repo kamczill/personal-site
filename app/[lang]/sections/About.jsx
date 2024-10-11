@@ -6,6 +6,7 @@ import Image from "next/image";
 import image from "../../../public/kamil-chrobak.jpg";
 import ExperienceList from "@/app/components/ExperienceList";
 
+
 const experienceList = [
   {
     position: "Nike Senior Designer",
@@ -36,14 +37,11 @@ const About = () => {
 
             <div className="pt-5 sm:pt-0 lg:pr-[60px] lg:w-fit">
               <h6 className=" uppercase pt-2 text-sm text-secondary sm:text-black sm:py-2 lg:text-base">
-                Service
+                CV
               </h6>
-              <ul className="flex flex-col text-lg sm:pt-5 lg:text-2xl lg:w-full">
-                <li>Art Director</li>
-                <li>Visual Design</li>
-                <li>Digital Branding</li>
-                <li>UX/UI Design</li>
-              </ul>
+              <div className="flex flex-col text-lg underline sm:pt-5 lg:text-2xl lg:w-full">
+                <a href='/pdff.pdf' target="_blank" rel="noopener noreferrer">Open my CV File</a>
+              </div>
             </div>
           </div>
 

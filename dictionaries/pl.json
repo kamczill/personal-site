@@ -1,0 +1,12 @@
+{
+  "lang": "pl",
+  "homepage":{
+    "hero": {
+      "description": "Poznaj Kamila, frontend developera z Krakowa. Specjalizując się w tworzeniu motywów na platformę Shopify i customowych rozwiązań, Kamil łączy precyzję, pixel-perfect design oraz terminowość w realizacji projektów. Zna technologie takie jak JavaScript, CSS, HTML, React oraz Liquid, a dzięki bliskiej współpracy z UX/UI designerami ożywia innowacyjne projekty cyfrowe.",
+      "animationText": "Współpracujmy! "
+    },
+    "featuredProjects": {
+      "headline": "Wyróżnione projekty"
+    }
+  }
+}

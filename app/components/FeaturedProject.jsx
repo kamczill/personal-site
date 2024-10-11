@@ -3,14 +3,15 @@ import Image from "next/image";
 import UnderlineButton from "./UnderlineButton";
 
 const FeaturedProject = ({
-  year,
-  title,
-  description,
-  pillsArray,
-  image,
-  link,
+  data
 }) => {
-  const pills = pillsArray?.map((pill) => (
+
+  const {
+    date, title, description, features, cover
+  } = data
+  const projectYear = new Date(date).getFullYear()
+
+  const pills = features.split(', ').map((pill) => (
     <div
       key={pill}
       className="px-[20px] py-[10px] text-sm uppercase border border-primary rounded-[80px]"
@@ -21,8 +22,8 @@ const FeaturedProject = ({
 
   return (
     <div className="py-5 border-b border-b-primary lg:grid lg:grid-cols-12 lg:gap-4 lg:py-10">
-      <h6 className="text-sm lg:col-start-5 lg:col-end-6 lg:my-4 lg:text-base">
-        {year}
+      <h6 className="text-sm lg:col-start-5 lg:col-end-6 lg:my-4 lg:text-base lg:text-center">
+        {projectYear}
       </h6>
 
       <div className="lg:col-start-1 lg:col-end-5 lg:row-start-1 lg:flex lg:flex-col lg:gap-[100px]">
@@ -43,13 +44,15 @@ const FeaturedProject = ({
       </div>
 
       <a
-        href={link}
+        href={'#'}
         className="py-5 block lg:col-start-6 lg:col-end-13 lg:row-start-1 lg:py-0 overflow-hidden"
       >
         <Image
-          alt={title}
-          src={image}
-          className="lg:object-cover lg:h-full lg:hover:scale-110 transition duration-500"
+          alt={cover.alternativeText}
+          src={process.env.NEXT_PUBLIC_STRAPI_API_URL + cover.url}
+          width={cover.width}
+          height={cover.height}
+          className="lg:object-contain lg:h-full lg:hover:scale-110 transition duration-500"
         />
       </a>
     </div>

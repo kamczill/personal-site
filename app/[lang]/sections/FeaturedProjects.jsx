@@ -3,22 +3,32 @@ import image from "../../../public/project1.webp";
 import Headline from "@/app/components/Headline";
 import { fetchFromStrapi } from "../../utils/fetchFromStrapi";
 
-const FeaturedProjects = async () => {
-  const res = await fetchFromStrapi('featured-projects1')
-  const data = await res.json()
+const FeaturedProjects = async ({dictionary}) => {
+  const res = await fetchFromStrapi('featured-projects1', dictionary.lang)
+  const json = await res.json()
+  const data = await json.data
 
   if(!res.ok){
-    return <p className="text-xl text-red-500 text-center">Something goes wrong!</p>
+    return <p className="text-xl text-red-500 text-center">{dictionary.errors.error404}</p>
   }
-  console.log(data)
 
 
   return (
     <section className="p-[10px] sm:p-[20px] lg:px-[60px] pt-5 border-t border-secondary flex flex-col gap-5">
-      <Headline>Featured Projects</Headline>
+      <Headline>{dictionary.homepage.featuredProjects.headline}</Headline>
       
       <div className="flex flex-col">
-        <FeaturedProject
+
+        {data && (
+          data.map(project => (
+            <FeaturedProject
+            data={project}
+            key={project.id}
+          />
+          ))
+        )}
+
+        {/* <FeaturedProject
           year="2023"
           title="mIA Website DESIGN"
           description="Minimalist website with a strong influence from Swiss typography, a sleek and sophisticated online presence that reflects our brand identity."
@@ -34,7 +44,7 @@ const FeaturedProjects = async () => {
           pillsArray={["UX/UI Design", "Web Design"]}
           image={image}
           link={"#"}
-        />
+        /> */}
       </div>
     </section>
   );

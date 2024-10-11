@@ -1,0 +1,15 @@
+{
+  "lang": "en",
+  "homepage":{
+    "hero": {
+      "description": "Meet Kamil, a frontend developer based in Kraków. With expertise in creating Shopify themes and custom solutions, Kamil combines precision, pixel-perfect design, and timely delivery. Specializing in JavaScript, CSS, HTML, React, and Liquid, he collaborates closely with UX/UI designers to bring innovative digital projects to life.",
+      "animationText": "Let's Work Together."
+    },
+    "featuredProjects": {
+      "headline": "Featured Projects"
+    }
+  },
+  "errors": {
+    "error404": "Something goes wrong!"
+  }
+}
