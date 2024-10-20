@@ -54,7 +54,7 @@ export default async function Page({ params: { lang } }) {
               well-rounded, robust solutions.
             </p>
             <br />
-            <p>Let’s build something extraordinary together!</p>
+            <p>Let's build something extraordinary together!</p>
           </div>
         </div>
       </div>
