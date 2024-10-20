@@ -6,16 +6,10 @@ const SocialLinks = () => {
   return (
     <ul className="flex flex-col sm:grid sm:grid-cols-2 md:flex">
       <li>
-        <SocialLink>Linkedin</SocialLink>
+        <SocialLink href="https://github.com/kamczill">Github</SocialLink>
       </li>
       <li>
-        <SocialLink>Dribble</SocialLink>
-      </li>
-      <li>
-        <SocialLink>Behance</SocialLink>
-      </li>
-      <li>
-        <SocialLink>Github</SocialLink>
+        <SocialLink href="https://www.linkedin.com/in/kamil-chrobak-543748269/">LinkedIn</SocialLink>
       </li>
     </ul>
   );

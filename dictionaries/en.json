@@ -1,15 +1,88 @@
 {
   "lang": "en",
-  "homepage":{
+  "navigation": {
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "homepage": {
     "hero": {
       "description": "Meet Kamil, a frontend developer based in Kraków. With expertise in creating Shopify themes and custom solutions, Kamil combines precision, pixel-perfect design, and timely delivery. Specializing in JavaScript, CSS, HTML, React, and Liquid, he collaborates closely with UX/UI designers to bring innovative digital projects to life.",
       "animationText": "Let's Work Together."
     },
     "featuredProjects": {
-      "headline": "Featured Projects"
+      "headline": "Featured Projects",
+      "viewProject": "View project"
+    },
+    "about": {
+      "headline": "About",
+      "experience": {
+        "title": "Experience",
+        "current": "Current"
+      },
+      "openCv": "Open my CV",
+      "description": "Hi, I’m Kamil, a frontend developer based in Kraków. I specialize in creating Shopify themes and custom solutions, ensuring precision, pixel-perfect design, and timely delivery. My skills include JavaScript, CSS, HTML, React, and Liquid. By collaborating closely with UX/UI designers, I bring digital projects to life, crafting innovative and visually appealing user experiences.",
+      "readMore": "Read more"
+    },
+    "contact": {
+      "headline": "Contact",
+      "description": "Have any questions, need a quote, or want to discuss a project? Reach out to me, and let's create something amazing together!"
+    },
+    "metadata": {
+      "title": "Kamil Chrobak - Web Developer",
+      "description": "Frontend developer based in Kraków, specializing in Shopify, React, and pixel-perfect designs. I offer custom solutions, full technical support, and innovative projects tailored to client needs."
+    }
+  },
+  "forms": {
+    "contactForm": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email Address",
+      "emailPlaceholder": "Your email",
+      "message": "Message",
+      "messagePlaceholder": "Your message",
+      "submit": "Submit",
+      "required": "This field is required",
+      "submitted": "Thank you, your message has been sent! I will get back to you as soon as possible."
     }
   },
   "errors": {
     "error404": "Something goes wrong!"
+  },
+  "projectPage": {
+    "pagination": {
+      "previousProject": "Previous project",
+      "nextProject": "Next project"
+    },
+    "metadata": {
+      "title": "Kamil Chrobak - Web Developer",
+      "description": "Frontend developer based in Kraków, specializing in Shopify, React, and pixel-perfect designs. I offer custom solutions, full technical support, and innovative projects tailored to client needs."
+    }
+  },
+  "projectsPage": {
+    "headline": "My projects",
+    "allProjects": {
+      "headline": "All projects"
+    },
+    "singleProject": {
+      "viewProject": "View project"
+    },
+    "metadata": {
+      "title": "Projects | Kamil Chrobak - Web Developer",
+      "description": "Frontend developer based in Kraków, specializing in Shopify, React, and pixel-perfect designs. I offer custom solutions, full technical support, and innovative projects tailored to client needs."
+    }
+  },
+  "aboutPage": {
+    "headline": "About",
+    "metadata": {
+      "title": "About | Kamil Chrobak - Web Developer",
+      "description": "Frontend developer based in Kraków, specializing in Shopify, React, and pixel-perfect designs. I offer custom solutions, full technical support, and innovative projects tailored to client needs."
+    }
+  },
+  "contactPage": {
+    "metadata": {
+      "title": "Contact | Kamil Chrobak - Web Developer",
+      "description": "Frontend developer based in Kraków, specializing in Shopify, React, and pixel-perfect designs. I offer custom solutions, full technical support, and innovative projects tailored to client needs."
+    }
   }
 }

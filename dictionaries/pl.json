@@ -1,12 +1,88 @@
 {
   "lang": "pl",
-  "homepage":{
+  "navigation": {
+    "projects": "Projekty",
+    "about": "O mnie",
+    "contact": "Kontakt"
+  },
+  "homepage": {
     "hero": {
       "description": "Poznaj Kamila, frontend developera z Krakowa. Specjalizując się w tworzeniu motywów na platformę Shopify i customowych rozwiązań, Kamil łączy precyzję, pixel-perfect design oraz terminowość w realizacji projektów. Zna technologie takie jak JavaScript, CSS, HTML, React oraz Liquid, a dzięki bliskiej współpracy z UX/UI designerami ożywia innowacyjne projekty cyfrowe.",
       "animationText": "Współpracujmy! "
     },
     "featuredProjects": {
-      "headline": "Wyróżnione projekty"
+      "headline": "Wyróżnione projekty",
+      "viewProject": "Zobacz projekt"
+    },
+    "about": {
+      "headline": "O mnie",
+      "experience": {
+        "title": "Doświadczenie",
+        "current": "Obecnie"
+      },
+      "openCv": "Otwórz CV",
+      "description": "Cześć, jestem Kamil, frontend developer z Krakowa. Specjalizuję się w tworzeniu motywów Shopify oraz customowych rozwiązań, dbając o precyzję, pixel-perfect design i terminowość realizacji. Moje umiejętności obejmują JavaScript, CSS, HTML, React i Liquid. Dzięki bliskiej współpracy z UX/UI designerami, ożywiam cyfrowe projekty, tworząc innowacyjne i estetyczne doświadczenia użytkownika.",
+      "readMore": "Więcej"
+    },
+    "contact": {
+      "headline": "Kontakt",
+      "description": "Masz pytania, potrzebujesz wyceny lub chcesz porozmawiać o współpracy? Napisz do mnie, a wspólnie stworzymy coś wyjątkowego!"
+    },
+    "metadata": {
+      "title": "Kamil Chrobak - Web Developer",
+      "description": "Frontend developer z Krakowa specjalizujący się w Shopify, React i tworzeniu pixel-perfect projektów. Oferuję customowe rozwiązania, pełne wsparcie techniczne oraz innowacyjne projekty dopasowane do potrzeb klienta."
+    }
+  },
+  "forms": {
+    "contactForm": {
+      "name": "Imię",
+      "namePlaceholder": "Twoje imię",
+      "email": "E-mail",
+      "emailPlaceholder": "Twój e-mail",
+      "message": "Wiadomość",
+      "messagePlaceholder": "Twoja wiadomość",
+      "submit": "Wyślij",
+      "required": "To pole jest wymagane",
+      "submitted": "Dziękuję, Twoja wiadomość została wysłana! Odpowiem najszybciej, jak to możliwe."
+    }
+  },
+  "errors": {
+    "error404": "Coś poszło nie tak!"
+  },
+  "projectPage": {
+    "pagination": {
+      "previousProject": "Poprzedni projekt",
+      "nextProject": "Następny projekt"
+    },
+    "metadata": {
+      "title": "Kamil Chrobak - Web Developer",
+      "description": "Frontend developer z Krakowa specjalizujący się w Shopify, React i tworzeniu pixel-perfect projektów. Oferuję customowe rozwiązania, pełne wsparcie techniczne oraz innowacyjne projekty dopasowane do potrzeb klienta."
+    }
+  },
+  "projectsPage": {
+    "headline": "Moje projekty",
+    "allProjects": {
+      "headline": "Wszystkie projekty"
+    },
+    "singleProject": {
+      "viewProject": "View project"
+    },
+    "metadata": {
+      "title": "Projekty | Kamil Chrobak - Web Developer",
+      "description": "Frontend developer z Krakowa specjalizujący się w Shopify, React i tworzeniu pixel-perfect projektów. Oferuję customowe rozwiązania, pełne wsparcie techniczne oraz innowacyjne projekty dopasowane do potrzeb klienta."
+    }
+  },
+  "aboutPage": {
+    "headline": "About",
+    "metadata": {
+      "title": "O mnie | Kamil Chrobak - Web Developer",
+      "description": "Frontend developer z Krakowa specjalizujący się w Shopify, React i tworzeniu pixel-perfect projektów. Oferuję customowe rozwiązania, pełne wsparcie techniczne oraz innowacyjne projekty dopasowane do potrzeb klienta."
+    }
+  },
+  "contactPage": {
+    "metadata": {
+      "title": "Kontakt | Kamil Chrobak - Web Developer",
+      "description": "Frontend developer z Krakowa specjalizujący się w Shopify, React i tworzeniu pixel-perfect projektów. Oferuję customowe rozwiązania, pełne wsparcie techniczne oraz innowacyjne projekty dopasowane do potrzeb klienta."
     }
   }
 }

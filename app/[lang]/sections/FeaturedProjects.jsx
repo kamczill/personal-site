@@ -5,12 +5,14 @@ import { fetchFromStrapi } from "../../utils/fetchFromStrapi";
 
 const FeaturedProjects = async ({dictionary}) => {
   const res = await fetchFromStrapi('featured-projects1', dictionary.lang)
-  const json = await res.json()
-  const data = await json.data
 
   if(!res.ok){
     return <p className="text-xl text-red-500 text-center">{dictionary.errors.error404}</p>
   }
+  
+  const json = await res.json()
+  const data = await json.data
+
 
 
   return (
@@ -24,6 +26,7 @@ const FeaturedProjects = async ({dictionary}) => {
             <FeaturedProject
             data={project}
             key={project.id}
+            dictionary={dictionary}
           />
           ))
         )}

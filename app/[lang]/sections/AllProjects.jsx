@@ -1,37 +1,24 @@
 import React from "react";
-import Headline from "../components/Headline";
-import SingleProject from "../components/SingleProject";
-import image from "../../public/project1.webp";
-const AllProjects = () => {
+import Headline from "@/app/components/Headline";
+import SingleProject from "@/app/components/SingleProject";
+import image from "../../../public/project1.webp";
+
+const AllProjects = ({data, dictionary}) => {
+
+  const projects = [...data].map(project => <SingleProject 
+    title={project.title}
+    description={project.description}
+    image={project.cover}
+    link={project.documentId}
+    dictionary={dictionary}
+  />)
+  
   return (
     <div className="p-[10px] sm:p-[20px] lg:px-[60px] pt-5 border-t border-secondary flex flex-col gap-5">
-      <Headline>All projects</Headline>
+      <Headline>{dictionary.projectsPage.allProjects.headline}</Headline>
 
       <div className="flex flex-col gap-5 md:grid md:grid-cols-2 md:gap-6">
-        <SingleProject
-          title="mIA Website DESIGN"
-          description="Minimalist website with a strong influence from Swiss typography, a sleek and sophisticated online presence that reflects our brand identity."
-          image={image}
-          link={"#"}
-        />
-        <SingleProject
-          title="mIA Website DESIGN"
-          description="Minimalist website with a strong influence from Swiss typography, a sleek and sophisticated online presence that reflects our brand identity."
-          image={image}
-          link={"#"}
-        />
-        <SingleProject
-          title="mIA Website DESIGN"
-          description="Minimalist website with a strong influence from Swiss typography, a sleek and sophisticated online presence that reflects our brand identity."
-          image={image}
-          link={"#"}
-        />
-        <SingleProject
-          title="mIA Website DESIGN"
-          description="Minimalist website with a strong influence from Swiss typography, a sleek and sophisticated online presence that reflects our brand identity."
-          image={image}
-          link={"#"}
-        />
+        {projects}
       </div>
     </div>
   );
