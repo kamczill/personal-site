@@ -31,7 +31,7 @@ export default async function Page({ params: { lang } }) {
           </h2>
           <div className="pt-5 md:text-[24px]">
             <p>
-              Hi there, I'm Kamil, a passionate frontend developer based in
+              Hi there, I&apos;m Kamil, a passionate frontend developer based in
               Kraków. I thrive on combining creativity with cutting-edge
               technology, bringing to life visually stunning and user-friendly
               digital experiences. With expertise in Shopify, custom solutions,
@@ -54,7 +54,7 @@ export default async function Page({ params: { lang } }) {
               well-rounded, robust solutions.
             </p>
             <br />
-            <p>Let's build something extraordinary together!</p>
+            <p>Let&apos;s build something extraordinary together!</p>
           </div>
         </div>
       </div>
