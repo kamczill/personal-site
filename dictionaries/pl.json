@@ -73,13 +73,21 @@
     }
   },
   "aboutPage": {
-    "headline": "About",
+    "headline": "O mnie",
     "metadata": {
       "title": "O mnie | Kamil Chrobak - Web Developer",
       "description": "Frontend developer z Krakowa specjalizujący się w Shopify, React i tworzeniu pixel-perfect projektów. Oferuję customowe rozwiązania, pełne wsparcie techniczne oraz innowacyjne projekty dopasowane do potrzeb klienta."
+    },
+    "content": {
+      "headline": "Tworzę Innowacyjne Rozwiązania Cyfrowe z Precyzją",
+      "paragraph_1": "Jestem Kamil, frontend developer z Krakowa. Łączę kreatywność z najnowszymi technologiami, tworząc nowoczesne, funkcjonalne projekty. Specjalizuję się w Shopify, customowych rozwiązaniach i pixel-perfect designie, dostarczając rezultaty, które przewyższają oczekiwania.",
+      "paragraph_2": "Ukończyłem informatykę na Uniwersytecie Pedagogicznym w Krakowie i technikum informatyczne w Rabce-Zdroju. To solidne wykształcenie daje mi pewność w rozwiązywaniu zadań frontendowych i backendowych.",
+      "paragraph_3": "Dzięki znajomości JavaScript, React, Liquid, HTML i CSS, z łatwością radzę sobie z każdym wyzwaniem. Moja wiedza z zakresu backendu pozwala tworzyć kompleksowe i solidne rozwiązania.",
+      "paragraph_4": "Stwórzmy razem coś wyjątkowego!"
     }
   },
   "contactPage": {
+    "headline": "Kontakt",
     "metadata": {
       "title": "Kontakt | Kamil Chrobak - Web Developer",
       "description": "Frontend developer z Krakowa specjalizujący się w Shopify, React i tworzeniu pixel-perfect projektów. Oferuję customowe rozwiązania, pełne wsparcie techniczne oraz innowacyjne projekty dopasowane do potrzeb klienta."

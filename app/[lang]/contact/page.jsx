@@ -16,7 +16,7 @@ export default async function Page({ params: { lang } }) {
   const dictionary = await getDictionary(lang);
   return (
     <div>
-      <Heading>Contact</Heading>
+      <Heading>{dictionary.contactPage.headline}</Heading>
       <Contact dictionary={dictionary} />
     </div>
   );

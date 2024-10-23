@@ -31,34 +31,16 @@ export default async function Page({ params: { lang } }) {
         </div>
         <div className="md:col-start-7 md:col-end-13">
           <h2 className="text-[40px] md:text-[56px]">
-            Crafting Innovative Digital Experiences with Precision and Passion
+            {dictionary.aboutPage.content.headline}
           </h2>
           <div className="pt-5 md:text-[24px]">
-            <p>
-              Hi there, I&apos;m Kamil, a passionate frontend developer based in
-              Kraków. I thrive on combining creativity with cutting-edge
-              technology, bringing to life visually stunning and user-friendly
-              digital experiences. With expertise in Shopify, custom solutions,
-              and pixel-perfect design, I ensure every project not only meets
-              but exceeds expectations.
-            </p>
+            <p>{dictionary.aboutPage.content.paragraph_1}</p>
             <br />
-            <p>
-              I hold a degree in Computer Science Engineering from the
-              Pedagogical University of Kraków and completed my education at the
-              IT technical school in Rabka-Zdrój. This solid foundation has
-              given me the skills and determination to tackle both frontend and
-              backend challenges with confidence.
-            </p>
+            <p>{dictionary.aboutPage.content.paragraph_2}</p>
             <br />
-            <p>
-              My skills in JavaScript, React, Liquid, HTML, and CSS allow me to
-              handle even the most complex challenges with ease. Additionally,
-              my understanding of backend technologies enables me to deliver
-              well-rounded, robust solutions.
-            </p>
+            <p>{dictionary.aboutPage.content.paragraph_3}</p>
             <br />
-            <p>Let&apos;s build something extraordinary together!</p>
+            <p>{dictionary.aboutPage.content.paragraph_4}</p>
           </div>
         </div>
       </div>

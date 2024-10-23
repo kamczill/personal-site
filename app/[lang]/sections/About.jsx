@@ -29,7 +29,10 @@ const About = ({ dictionary, lang }) => {
       <div className="py-5">
         <div className="py-[10px] lg:grid lg:grid-cols-12">
           <div className="sm:flex sm:items-start sm:gap-5 lg:col-span-6 xl:col-span-5">
-            <ExperienceList experiences={experienceList} />
+            <ExperienceList
+              dictionary={dictionary}
+              experiences={experienceList}
+            />
 
             <div className="pt-5 sm:pt-0 lg:pr-[60px] lg:w-fit">
               <h6 className=" uppercase pt-2 text-sm text-secondary sm:text-black sm:py-2 lg:text-base">
