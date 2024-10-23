@@ -9,6 +9,8 @@ const FeaturedProject = ({ data, dictionary }) => {
   const projectYear = new Date(date).getFullYear();
   const url = dictionary.lang + "/projects/" + data?.project?.documentId;
 
+  if (cover) console.log(cover);
+
   const pills = features
     .split(", ")
     .map((pill) => <Pill key={pill}>{pill}</Pill>);
