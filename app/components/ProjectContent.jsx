@@ -5,13 +5,14 @@ const ProjectContent = ({ content, images, cover, title }) => {
   const getImageByName = (imageName) => {
     const index = imageName.match(/\d+/);
     const image = images[index];
-    console.log(image);
+
     return (
       <Image
-        src={process.env.NEXT_PUBLIC_STRAPI_API_URL + image?.url}
+        src={image?.url}
         width={image?.width}
         height={image?.height}
         alt={image?.alternativeText || title}
+        className="bg-slate-500"
       />
     );
   };
@@ -81,7 +82,7 @@ const ProjectContent = ({ content, images, cover, title }) => {
       {cover && (
         <div className="w-full lg:col-span-12 lg:mb-12">
           <Image
-            src={process.env.NEXT_PUBLIC_STRAPI_API_URL + cover.url}
+            src={cover.url}
             width={cover.width}
             height={cover.height}
             alt={cover.alternativeText || title}

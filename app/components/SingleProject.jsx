@@ -12,7 +12,7 @@ const SingleProject = ({ title, description, link, image, dictionary }) => {
         {image && (
           <Image
             className="lg:hover:scale-110 transition duration-500"
-            src={process.env.NEXT_PUBLIC_STRAPI_API_URL + "/" + image?.url}
+            src={image?.url}
             alt={title}
             width={image.width}
             height={image.height}
