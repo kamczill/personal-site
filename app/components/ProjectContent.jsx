@@ -12,7 +12,7 @@ const ProjectContent = ({ content, images, cover, title }) => {
         width={image?.width}
         height={image?.height}
         alt={image?.alternativeText || title}
-        className="bg-slate-400"
+        className="bg-gray-400"
       />
     );
   };
@@ -86,7 +86,7 @@ const ProjectContent = ({ content, images, cover, title }) => {
             width={cover.width}
             height={cover.height}
             alt={cover.alternativeText || title}
-            className="bg-slate-400"
+            className="bg-gray-400"
           />
         </div>
       )}
