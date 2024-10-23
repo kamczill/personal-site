@@ -11,7 +11,7 @@ const SingleProject = ({ title, description, link, image, dictionary }) => {
       <Link href={url} className="overflow-hidden">
         {image && (
           <Image
-            className="lg:hover:scale-110 transition duration-500"
+            className="bg-slate-400 lg:hover:scale-110 transition duration-500"
             src={image?.url}
             alt={title}
             width={image.width}

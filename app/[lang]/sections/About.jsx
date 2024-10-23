@@ -62,7 +62,7 @@ const About = ({ dictionary, lang }) => {
               <Image
                 src={image}
                 alt="Kamil Chrobak"
-                className="w-auto h-[80%] transition duration-300 lg:hover:scale-125"
+                className="w-auto h-[80%] transition duration-300 bg-slate-400 lg:hover:scale-125"
               />
             </div>
           </div>
