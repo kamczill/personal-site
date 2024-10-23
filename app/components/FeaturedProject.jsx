@@ -42,13 +42,15 @@ const FeaturedProject = ({ data, dictionary }) => {
         href={url}
         className="py-5 block lg:col-start-6 lg:col-end-13 lg:row-start-1 lg:py-0 overflow-hidden"
       >
-        <Image
-          alt={cover.alternativeText || title}
-          src={process.env.NEXT_PUBLIC_STRAPI_API_URL + cover.url}
-          width={cover.width}
-          height={cover.height}
-          className="lg:object-contain lg:h-full lg:hover:scale-110 transition duration-500"
-        />
+        {cover && (
+          <Image
+            alt={cover.alternativeText || title}
+            src={process.env.NEXT_PUBLIC_STRAPI_API_URL + cover.url}
+            width={cover.width}
+            height={cover.height}
+            className="lg:object-contain lg:h-full lg:hover:scale-110 transition duration-500"
+          />
+        )}
       </Link>
     </div>
   );

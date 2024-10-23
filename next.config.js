@@ -1,5 +1,5 @@
 module.exports = {
-    images: {
-      domains: ['localhost'],
-    },
-  };
+  images: {
+    domains: ["localhost", "strapi-personal-site.onrender"],
+  },
+};
