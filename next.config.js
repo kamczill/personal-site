@@ -3,8 +3,8 @@ module.exports = {
     domains: [
       "localhost",
       "strapi-personal-site.onrender",
-      "res.cloudinary",
-      "cloudinary",
+      "res.cloudinary.com",
+      "cloudinary.com",
     ],
   },
 };
