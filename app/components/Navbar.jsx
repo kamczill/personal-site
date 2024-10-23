@@ -13,6 +13,10 @@ const Navbar = ({ lang, dictionary }) => {
 
   const handleOpenMenu = () => setIsOpenMenu((val) => !val);
 
+  const handleCloseMenu = () => {
+    if (window.innerWidth < 1000) setIsOpenMenu(false);
+  };
+
   const changeLanguage = (nextLang) => {
     return pathname.replace(lang, nextLang);
   };
@@ -51,13 +55,25 @@ const Navbar = ({ lang, dictionary }) => {
             isOpenMenu ? "visible" : "invisible"
           } z-10 bg-white h-screen lg:h-auto lg:static lg:flex-row lg:visible lg:items-end lg:justify-end lg: gap-8`}
         >
-          <NavLink href={"/" + lang + "/projects"} currentPath={pathname}>
+          <NavLink
+            href={"/" + lang + "/projects"}
+            currentPath={pathname}
+            onClick={handleCloseMenu}
+          >
             {dictionary.navigation.projects}
           </NavLink>
-          <NavLink href={"/" + lang + "/about"} currentPath={pathname}>
+          <NavLink
+            href={"/" + lang + "/about"}
+            currentPath={pathname}
+            onClick={handleCloseMenu}
+          >
             {dictionary.navigation.about}
           </NavLink>
-          <NavLink href={"/" + lang + "/contact"} currentPath={pathname}>
+          <NavLink
+            href={"/" + lang + "/contact"}
+            currentPath={pathname}
+            onClick={handleCloseMenu}
+          >
             {dictionary.navigation.contact}
           </NavLink>
 
@@ -67,6 +83,7 @@ const Navbar = ({ lang, dictionary }) => {
               className={`underline-offset-4 p-2 ${
                 pathname.includes("pl") && "underline hover:opacity-70"
               }`}
+              onClick={handleCloseMenu}
             >
               PL
             </Link>
@@ -76,6 +93,7 @@ const Navbar = ({ lang, dictionary }) => {
               className={`underline-offset-4 p-2 ${
                 pathname.includes("en") && "underline hover:opacity-70"
               }`}
+              onClick={handleCloseMenu}
             >
               EN
             </Link>

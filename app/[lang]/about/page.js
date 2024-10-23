@@ -26,7 +26,7 @@ export default async function Page({ params: { lang } }) {
           <Image
             src={portrait}
             alt="Kamil Chrobak"
-            className="w-full bg-gray-400"
+            className="w-full bg-gray-300"
           />
         </div>
         <div className="md:col-start-7 md:col-end-13">
