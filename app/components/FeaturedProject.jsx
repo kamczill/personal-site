@@ -50,7 +50,7 @@ const FeaturedProject = ({ data, dictionary }) => {
             src={cover.url}
             width={cover.width}
             height={cover.height}
-            className="bg-slate-400 lg:object-contain lg:h-full lg:hover:scale-110 transition duration-500"
+            className="lg:object-contain lg:h-full lg:hover:scale-110 transition duration-500"
           />
         )}
       </Link>
