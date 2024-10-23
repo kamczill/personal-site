@@ -45,7 +45,7 @@ const FeaturedProject = ({ data, dictionary }) => {
         {cover && (
           <Image
             alt={cover.alternativeText || title}
-            src={process.env.NEXT_PUBLIC_STRAPI_API_URL + cover.url}
+            src={cover.url}
             width={cover.width}
             height={cover.height}
             className="lg:object-contain lg:h-full lg:hover:scale-110 transition duration-500"
